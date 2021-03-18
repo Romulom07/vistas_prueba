@@ -10,66 +10,81 @@
 </head>
 
 <body>
-    <div class="m-20 mt-5 md:mt-0 md:col-span-2 bg-black">
-      <form action="#" method="POST">
-        <div class="shadow overflow-hidden sm:rounded-md">
-          <div class="px-4 py-5 bg-white sm:p-6">
-            <div class="grid grid-cols-6 gap-6">
-              <div class="col-span-6 sm:col-span-3">
-                <label for="first_name" class="block text-sm font-medium text-gray-700">First name</label>
-                <input type="text" name="first_name" id="first_name" autocomplete="given-name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
-              </div>
-
-              <div class="col-span-6 sm:col-span-3">
-                <label for="last_name" class="block text-sm font-medium text-gray-700">Last name</label>
-                <input type="text" name="last_name" id="last_name" autocomplete="family-name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
-              </div>
-
-              <div class="col-span-6 sm:col-span-4">
-                <label for="email_address" class="block text-sm font-medium text-gray-700">Email address</label>
-                <input type="text" name="email_address" id="email_address" autocomplete="email" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
-              </div>
-
-              <div class="col-span-6 sm:col-span-3">
-                <label for="country" class="block text-sm font-medium text-gray-700">Country / Region</label>
-                <select id="country" name="country" autocomplete="country" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
-                  <option>United States</option>
-                  <option>Canada</option>
-                  <option>Mexico</option>
-                </select>
-              </div>
-
-              <div class="col-span-6">
-                <label for="street_address" class="block text-sm font-medium text-gray-700">Street address</label>
-                <input type="text" name="street_address" id="street_address" autocomplete="street-address" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
-              </div>
-
-              <div class="col-span-6 sm:col-span-6 lg:col-span-2">
-                <label for="city" class="block text-sm font-medium text-gray-700">City</label>
-                <input type="text" name="city" id="city" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
-              </div>
-
-              <div class="col-span-6 sm:col-span-3 lg:col-span-2">
-                <label for="state" class="block text-sm font-medium text-gray-700">State / Province</label>
-                <input type="text" name="state" id="state" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
-              </div>
-
-              <div class="col-span-6 sm:col-span-3 lg:col-span-2">
-                <label for="postal_code" class="block text-sm font-medium text-gray-700">ZIP / Postal</label>
-                <input type="text" name="postal_code" id="postal_code" autocomplete="postal-code" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
-              </div>
-            </div>
-          </div>
-          <div class="px-4 py-3 bg-gray-50 text-right sm:px-6">
-            <button type="submit" class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-              Save
-            </button>
+<body class="bg-gray-600 antialiased flex font-sans text-gray-900">
+    <form class="bg-white mx-auto max-w-2xl  h-3/5 my-32 inputs space-y-4">
+      <div>
+        <h1 class="contenedor px-4 w-2x1 text-1xl text-white font-bold bg-blue-900 h-12 p-4">Agregar Usuario</h1>
+      </div>
+      <div class="flex space-x-4">
+        <div class="w-1/2 px-2">
+          <label for="Nombre">Nombre</label>
+          <input
+            class="bg-gray-200 border border-gray-400 py-2 w-full focus:outline-none focus:border-teal-400"
+            type="text" value="nombre"/>
+        </div>
+        
+        <div class="w-1/2 px-2">
+          <label for="lastname">Apellido</label>
+          <input
+            class="bg-gray-200 border border-gray-400 px-4 py-2 w-full focus:outline-none focus:border-teal-400"
+            type="text" value="apellido"/>
+        </div>
+        </div>
+        <div class="flex space-x-4">
+        <div class="w-1/2 px-2 ">
+          <label for="Nombre">Cédula o Rif</label>
+          <div class="input-group bg-black">
+            <span class="input-group-addon"><select class="w-1/4"><option>V</option><option>E</option></select><input type="text" class="w-9/12 form-control bg-gray-200 border border-gray-400 px-4 py-2 focus:outline-none focus:border-teal-400" placeholder="Cédula o Rif"> </input></span> 
           </div>
         </div>
-      </form>
-    </div>
-  </div>
-</div>
+        
+        <div class="w-1/2 px-2">
+          <label for="lastname" class="">Género</label>
+          <span class="block"><input type="radio" value="Masculino" class="m-3"/>Masculino</input><input type="radio" value="Femenino" class="m-3"/>Femenino</input><input type="radio" value="Otro" class="m-3"/>Otro</input></span>
+        </div>
+        </div>
+        <div class="flex space-x-4">
+        <div class="w-1/2 px-2">
+          <label for="Nombre">Email</label>
+          <input
+            class="bg-gray-200 border border-gray-400 px-4 py-2  w-full focus:outline-none focus:border-teal-400"
+            type="email" value="Email"/>
+        </div>
+        
+        <div class="w-1/2 px-2">
+          <label for="lastname">Teléfono</label>
+          <input
+            class="bg-gray-200 border border-gray-400 px-4 py-2 w-full focus:outline-none focus:border-teal-400"
+            type="tel" value="Teléfono" />
+        </div>
+        </div>
+        <div class="flex space-x-4">
+        <div class="w-1/2 px-2">
+          <label for="Nombre">Contraseña</label>
+          <input
+            class="bg-gray-200 border border-gray-400 px-4 py-2 w-full focus:outline-none focus:border-teal-400"
+            type="password" value="Contraseña"/>
+        </div>
+  
+        <div class="w-1/2 px-2">
+          <label for="lastname">Confirmar Contraseña</label>
+          <input
+            class="bg-gray-200 border border-gray-400 px-4 py-2 w-full focus:outline-none focus:border-teal-400"
+            type="password" value="Confimar Contraseña"/>
+        </div>
+        </div>
+        <div class="flex space-x-4">
+        <div class="w-2/3 px-2">
+          <label for="lastname" class="">Rol</label>
+          <span class="block"><input type="radio" value="Administrador" class="m-3"/>Administrador</input><input type="radio" value="Manager" class="m-3"/>Manager</input><input type="radio" value="Cliente" class="m-3"/>Cliente</input><input type="radio" value="Usuario" class="m-3"/>Usuario</input></span>
+        </div>
+        </div>
+        <div class="flex space-x-4">
+        <div class="m-4 p-4 w-1/4 mx-auto bg-blue-900 text-white text-center rounded-ms">
+          <button type="submit">Agregar</button>
+        </div>
+        </div>
+        
+        
 </body>
-
 </html>
