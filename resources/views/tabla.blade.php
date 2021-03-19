@@ -7,20 +7,31 @@
 	<!-- Styles -->
         <link rel="stylesheet" href="{{mix('css/app.css')}}">
 </head>
-<body class="bg-gray-400">
-<div class="space-y-4 m-20 p-5 h-30 w-3/5  mx-auto bg-blue-400 rounded-xl shadow-md  space-x-4 border-white ">
-  <span class="block  " ><input type="search" value="Buscar..." class="w-80 h-8"><input type="date" value="Fecha desde" class="h-8 m-2" ><input type="date" value="Fecha hasta" class="h-8" ><button type="submmit" value="buscar" class="w-8 h-8 bg-white m-2">S</button></span>
-  <span class="block "><label>Rol:</label><input type="radio" value="Administrador" class="m-3">Administrador</input><input type="radio" value="Manager" class="m-3">Manager</input><input type="radio" value="Cliente" class="m-3">Cliente</input><input type="radio" value="Usuario" class="m-3">Usuario</input></span>
-</div>
-
-
-<div class="p-5 space-y-4 space-x-4 h-50 w-3/5  mx-auto " >
-    <button type="submit" class="w-35 h-35 bg-green-400 rounded-xl">Agregar nuevo</button>
-    <button type="submit" class="w-35 h-35 bg-red-400 rounded-xl">Mover a la papelera</button>
-</div>
-
+<body class="bg-gray-200">
+  <div class="container mx-auto bg-white box-border border-gray-400 border-4 w-3/5 m-12  ">
+    <form class="">
+      <div class="input-group p-4 m-1">
+      <input type="search" name="Busqueda" placeholder="Buscar..."  class="h-9 m-1 w-80 bg-gray-300"> 
+      <input type="date" name="Fecha" placeholder="Fecha desde" class="h-9 m-1 bg-gray-300"> 
+      <input type="date" name="Fecha" placeholder="Fecha hasta" class="h-9 m-1 bg-gray-300"> 
+      <button type="submit" class="bg-gray-300 h-9 w-12 rounded hover:bg-gray-400" > Subir </button>
+      <span> Rol: </span>
+      <input type="radio" name="" class="m-2 bg-gray-300">Administrador
+      <input type="radio" name="" class="m-2 bg-gray-300">Manager
+      <input type="radio" name="" class="m-2 bg-gray-300">Cliente
+      <input type="radio" name="" class="m-2 bg-gray-300">Usuario
+    </form>
+  </div>
+  </form>
+  </div>   
+<div class="container mx-auto w-3/5   " >
+  <div class="button-group text-right rounded-md text-white">
+    <button type="submit" class="m-2 w-35 h-8 bg-green-400 rounded">Agregar nuevo</button>
+    <button type="submit" class="m-2 w-35 h-8 bg-red-400 rounded">Mover a la papelera</button>
+  </div>
+</div>  
 <div class="flex flex-col " >
-  <div class="my-2 overflow-x-auto mx-auto px-4 sm:px-6 lg:px-8 ">
+  <div class="my-2 overflow-x-auto mx-auto ">
     <div class="w-full py-2 align-middle inline-block  sm:px-6 lg:px-8 ">
       <div class="shadow overflow-hidden border-b border-grey-500 sm:rounded-lg">
         <table class="w-3/5 divide-y divide-gray-200  ">
@@ -80,23 +91,19 @@
               </td>
               <td class="flex items-center p-3 m-3">
               <button type="submit" class="m-1 w-4 bg-green-600">a </button>
-                <button type="submit" class="m-1 w-4 bg-green-600">b </button>
-                <button type="submit" class="m-1 w-4 bg-green-600">c </button>
-                <button type="submit" class="m-1 w-4 bg-green-600">d </button>
+              <button type="submit" class="m-1 w-4 bg-green-600">b </button>
+              <button type="submit" class="m-1 w-4 bg-green-600">c </button>
+              <button type="submit" class="">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"xmlns="http://www.w3.org/2000/svg"><path d="M12 6C12.5523 6 13 6.44772 13 7V11H17C17.5523 11 18 11.4477 18 12C18 12.5523 17.5523 13 17 13H13V17C13 17.5523 12.5523 18 12 18C11.4477 18 11 17.5523 11 17V13H7C6.44772 13 6 12.5523 6 12C6 11.4477 6.44772 11 7 11H11V7C11 6.44772 11.4477 6 12 6Z" fill="currentColor"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M5 22C3.34315 22 2 20.6569 2 19V5C2 3.34315 3.34315 2 5 2H19C20.6569 2 22 3.34315 22 5V19C22 20.6569 20.6569 22 19 22H5ZM4 19C4 19.5523 4.44772 20 5 20H19C19.5523 20 20 19.5523 20 19V5C20 4.44772 19.5523 4 19 4H5C4.44772 4 4 4.44772 4 5V19Z" fill="currentColor"/>
+              </button>
               </td>
             </tr>
-            
-            <!-- More items... -->
           </tbody>
         </table>
       </div>
     </div>
   </div>
 </div>
-
-
-
-
-
 </body>
 </html>

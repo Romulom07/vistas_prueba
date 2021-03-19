@@ -5,6 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximun-scale=1, minimun-scale=1">
 <link rel="stylesheet" href="{{mix('css/app.css')}}">
+<link href='https://cdn.jsdelivr.net/npm/css.gg/icons/all.css' rel='stylesheet'>
 
     <title></title>
 </head>
@@ -33,7 +34,7 @@
         <div class="flex space-x-4">
         <div class="w-1/2 px-2 ">
           <label for="Nombre">Cédula o Rif</label>
-          <div class="input-group bg-black">
+          <div class="input-group">
             <span class="input-group-addon"><select class="w-1/4"><option>V</option><option>E</option></select><input type="text" class="w-9/12 form-control bg-gray-200 border border-gray-400 px-4 py-2 focus:outline-none focus:border-teal-400" placeholder="Cédula o Rif"> </input></span> 
           </div>
         </div>
@@ -80,8 +81,9 @@
         </div>
         </div>
         <div class="flex space-x-4">
-        <div class="m-4 p-4 w-1/4 mx-auto bg-blue-900 text-white text-center rounded-ms">
-          <button type="submit">Agregar</button>
+        <div class="m-4 p-4 w-1/4 mx-auto bg-blue-900 text-white text-center rounded-ms ">
+          <button type="submit">Agregar
+          </button>
         </div>
         </div>
         
