@@ -7,14 +7,14 @@
 	<!-- Styles -->
         <link rel="stylesheet" href="{{mix('css/app.css')}}">
 </head>
-<body class="bg-gray-200">
-  <div class="container mx-auto bg-white box-border border-gray-400 border-4 w-3/5 m-12  ">
+<body class="bg-gray-400">
+<div class="container mx-auto bg-white box-border border-gray-400 border-4 w-3/5 m-12  ">
     <form class="">
       <div class="input-group p-4 m-1">
       <input type="search" name="Busqueda" placeholder="Buscar..."  class="h-9 m-1 w-80 bg-gray-300"> 
       <input type="date" name="Fecha" placeholder="Fecha desde" class="h-9 m-1 bg-gray-300"> 
       <input type="date" name="Fecha" placeholder="Fecha hasta" class="h-9 m-1 bg-gray-300"> 
-      <button type="submit" class="bg-gray-300 h-9 w-12 rounded hover:bg-gray-400" >Buscar</button>
+      <button type="submit" class="bg-gray-300 h-9 w-12 rounded hover:bg-gray-400" > Subir </button>
       <span> Rol: </span>
       <input type="radio" name="" class="m-2 bg-gray-300">Administrador
       <input type="radio" name="" class="m-2 bg-gray-300">Manager
@@ -24,16 +24,15 @@
   </div>
   </form>
   </div>   
-<div class="container mx-auto w-3/5   " >
-  <div class="button-group text-right rounded-md text-white">
-    <button type="submit" class="m-2 w-35 h-8 bg-green-400 rounded">Agregar nuevo</button>
-    <button type="submit" class="m-2 w-35 h-8 bg-red-400 rounded">Mover a la papelera</button>
-  </div>
-</div>  
+<div class="p-5 space-y-4 space-x-4 h-50 w-3/5  mx-auto " >
+    <button type="submit" class="w-35 h-35 bg-green-400 rounded-xl">Agregar nuevo</button>
+    <button type="submit" class="w-35 h-35 bg-red-400 rounded-xl">Mover a la papelera</button>
+</div>
+
 <div class="flex flex-col " >
-  <div class="my-2 overflow-x-auto mx-auto ">
+  <div class="my-2 overflow-x-auto mx-auto px-4 sm:px-6 lg:px-8 ">
     <div class="w-full py-2 align-middle inline-block  sm:px-6 lg:px-8 ">
-      <div class="shadow overflow-hidden border-b border-grey-500 sm:rounded-lg">
+      <div class="shadow overflow-hidden border border-grey-600 sm:rounded-lg">
         <table class="w-3/5 divide-y divide-gray-200  ">
           <thead class="bg-blue-900">
             <tr>
@@ -91,10 +90,9 @@
               </td>
               <td class="flex items-center p-3 m-3">
               <button type="submit" class="m-1 w-4 bg-green-600">a </button>
-              <button type="submit" class="m-1 w-4 bg-green-600">b </button>
-              <button type="submit" class="m-1 w-4 bg-green-600">c </button>
-              <button type="submit" class="m-1 w-4 bg-green-600">d </button>
-              </button>
+               <button type="submit" class="m-1 w-4 bg-green-600">b </button>
+                <button type="submit" class="m-1 w-4 bg-green-600">c </button>
+                <button type="submit" class="m-1 w-4 bg-green-600">d </button>
               </td>
             </tr>
           </tbody>
@@ -103,5 +101,10 @@
     </div>
   </div>
 </div>
+
+
+
+
+
 </body>
 </html>
