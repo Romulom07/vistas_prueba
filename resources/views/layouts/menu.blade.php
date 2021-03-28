@@ -10,7 +10,7 @@
 <ul>
 <div class="flex space-x-4">
     <div class="px-2">
-        <li><a class="p-2 m-2 bg-blue-400 text-center text-white " href="{{ route('categories',) }}">Categorias</a></li>
+        <li><a class="p-2 m-2 bg-blue-400 text-center text-white " href="{{ route('categories.index') }}">Categorias</a></li>
     </div>
 <div class="flex space-x-4">
     <div class=" px-2">

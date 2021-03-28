@@ -28,11 +28,12 @@ Route::get('/formulario', function () {
     return view('formulario');
 });
 
-Route::get('/categories',[CategoryController::class,'index'])->name('categories');
+Route::resource('categories', CategoryController::class);
 
 Route::get('/subcategories',[SubCategoryController::class,'index'])->name('sub_categories'); 
 
-Route::get('/Marca',[MarcaController::class,'index'])->name('marcas'); 
+Route::get('/Marca',[MarcaController::class,'index'])->name('marcas');
+
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
