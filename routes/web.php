@@ -32,7 +32,7 @@ Route::resource('categories', CategoryController::class);
 
 Route::get('/subcategories',[SubCategoryController::class,'index'])->name('sub_categories'); 
 
-Route::get('/Marca',[MarcaController::class,'index'])->name('marcas');
+Route::resource('/marks', MarcaController::class);
 
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {

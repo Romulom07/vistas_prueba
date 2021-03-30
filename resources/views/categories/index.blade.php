@@ -40,10 +40,11 @@
 		<form action="{{route('categories.destroy', $category->id)}}" method="post">
 		{{ csrf_field() }}
         {{ method_field('DELETE') }}
-        <button class="btn btn-danger w-8 bg-red-200" type="submit" data-confirm="Are you sure you want to delete this comment?" value="delete" >Eliminar</button>
+        <button class="btn btn-secondary rounded" type="submit" value="delete" >Eliminar
+		</button>
 		</form>
 
-	<a class="btn btn-primary btn-xs" href="{{ route('categories.edit', $category)}}" >Edit</a>
+	<a class="btn btn-primary btn-xs" href="{{ route('categories.edit', $category)}}" >Editar</a>
 	</td>
 </tr>			
 @endforeach	

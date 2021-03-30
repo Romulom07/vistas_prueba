@@ -17,6 +17,7 @@ class CreateCategoriesTable extends Migration
             $table->id();
             $table->string('name');
             $table->string('image')->nullable();
+            $table->softDeletes(); //Columna para soft delete
             $table->timestamps('');
     });
 }

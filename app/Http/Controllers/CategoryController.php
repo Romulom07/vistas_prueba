@@ -84,9 +84,9 @@ class CategoryController extends Controller
     {
         $category->fill([
             'name' => $request->name
-          ]);
-      
-          $category->save();
+        ]);
+
+        $category->save();
       
           return redirect()->route('categories.index');
     }

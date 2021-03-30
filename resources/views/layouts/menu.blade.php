@@ -18,7 +18,7 @@
     </div>
 <div class="flex space-x-4">
     <div class=" px-2">
-        <a class="p-2 m-2 bg-blue-400 text-center text-white mx-auto" href="{{ route('marcas',) }}">Marcas</a></li>
+        <a class="p-2 m-2 bg-blue-400 text-center text-white mx-auto" href="{{ route('marks.index',) }}">Marcas</a></li>
     </div>
     </div>
     </div>
